@@ -327,6 +327,15 @@ div.notification ul li {
   margin-right: 10px;
 }
 
+div.notification ul li:nth-child(2) img {
+  border-radius: 8px;
+}
+
+div.notification ul li:nth-child(1),
+div.notification ul li:nth-child(3) {
+  padding-top: 5px;
+}
+
 div.activity_card_container {
   background: #fff;
   border-radius: 24px;
@@ -354,12 +363,34 @@ div.activity-heading h5 {
   color: #9da8b6;
 }
 
-div.activity_date div.activity-img {
+div.activity_date {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.activity_img li {
+  list-style: none;
   display: flex;
   align-items: center;
-  font-size: 12px;
+  cursor: pointer;
+}
+
+div.activity_img img {
+  padding-right: 5px;
+}
+
+div.activity_img {
+  background: #f9fafc;
+  border-radius: 8px;
+  padding: 5px 7px;
+  font-size: 14px;
   line-height: 20px;
   color: #9da8b6;
+}
+
+div.activity-img {
+  margin-left: 5px;
+  cursor: pointer;
 }
 
 div.brand1 {
@@ -422,6 +453,11 @@ div.activity_image#nike1 {
 
 div.activity_image#apple1 {
   background-color: #2a69af;
+}
+
+div.content {
+  display: flex;
+  flex-direction: column;
 }
 
 div.text {
