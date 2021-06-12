@@ -141,9 +141,138 @@ div.heading_btn a {
   border-radius: 8px;
 }
 
+div.virtual_cards_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+div.image1 img {
+  width: 300px;
+}
+
+div.image2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* box-shadow: 10px 10px 41px rgba(0, 0, 0, 0.03);
+  box-shadow: 0px 20px 36px rgba(0, 0, 0, 0.06); */
+}
+
+div.position_img {
+  position: absolute;
+  left: 30px;
+}
+
+div.position_img1 {
+  position: absolute;
+  right: 10px;
+}
+
+div.position_img2 {
+  position: relative;
+  left: -40px;
+}
+
+div.position_img2 img {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+div.position_img2 img,
+div.position_img img,
+div.position_img1 img {
+  width: 300px;
+}
+
+div.buttons {
+  padding-left: 2rem;
+}
+
+div.buttons a:nth-child(1) {
+  background: transparent;
+  border: 1px solid #006156;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #006156;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+}
+
+div.buttons a:nth-child(2) {
+  background: transparent;
+  border: 1px solid #cc4945;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #cc4945;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+div.virtual_card_account {
+  background: #f9fafc;
+  border-radius: 24px;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+div.account_flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+div.flex1 li,
+div.flex2 li,
+div.flex3 li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+div.flex1 li {
+  font-size: 13px;
+  line-height: 28px;
+  color: #9da8b6;
+}
+
+div.flex2 {
+  margin-left: 40px;
+}
+
+div.flex2 li:nth-child(1) {
+  color: #006156;
+}
+
+div.flex2 li {
+  font-size: 13px;
+  line-height: 28px;
+  color: #575a65;
+}
+
+div.flex3 {
+  margin-top: 15px;
+}
+
+div.flex3 a {
+  text-decoration: none;
+  border: 1px solid #006156;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: transparent;
+  color: #006156;
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
 /* Card Brand Styling */
 div.card_brand_container {
   flex: 1;
-  min-width: 40px;
+  min-width: 20px;
   background: #f9fafc;
 }
