@@ -21,7 +21,7 @@
   font-family: "gilroylight";
 }
 
-body {
+div#wrapper {
   display: flex;
   flex-wrap: nowrap;
 }
