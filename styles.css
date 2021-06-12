@@ -350,6 +350,25 @@ div.flex3 a {
     display: flex;
     flex-direction: column;
   }
+
+  div.virtual_card_account {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  div.account_flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  div.flex2 {
+    margin-left: 12px;
+  }
+
+  div.flex3 a {
+    font-size: 10px;
+  }
 }
 
 /* Card Brand Styling */
@@ -522,4 +541,14 @@ span.text-light {
   font-size: 12px;
   line-height: 20px;
   color: #9da8b6;
+}
+
+@media screen and (max-width: 768px) {
+  div.activity_flex {
+    padding: 1.5rem;
+  }
+
+  div.brand1 {
+    padding: 1.5rem;
+  }
 }
