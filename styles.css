@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "gilroyextrabold";
+  src: url("./fonts/gilroy-extrabold-webfont.woff2") format("woff2"),
+    url("./fonts/gilroy-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroylight";
+  src: url("./fonts/gilroy-light-webfont.woff2") format("woff2"),
+    url("./fonts/gilroy-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroylight";
+}
+
+div.wrapper {
+  padding: 10px 30px;
+}
+
+div.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.line {
+  position: relative;
+  left: 250px;
+  height: 100vh;
+  border-right: 1px solid #eff2f7;
+}
+
+div.card-sidebar_link {
+  padding: 5px 15px;
+}
+
+div.card-logo {
+  padding: 1rem;
+}
+
+div.links {
+  padding-top: 3rem;
+}
+
+div.links ul {
+  list-style: none;
+}
+
+div.links ul li {
+  margin-top: 25px;
+}
+
+div.links img {
+  margin-right: 20px;
+}
+
+div.links ul li a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #979aa5;
+}
+
+div.links ul li:nth-child(3) a {
+  background-color: #ffeea7;
+  border-radius: 5px;
+  color: #006156;
+  padding: 10px 40px;
+}
+
+.help_center {
+  position: absolute;
+  bottom: 0px;
+}
