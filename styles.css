@@ -38,6 +38,10 @@ div.card-logo {
 div.links {
   padding-top: 3rem;
   padding-right: 20px;
+  height: calc(100vh - 10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 div.links ul {
@@ -70,9 +74,15 @@ div.links ul li:nth-child(3) a {
   padding: 10px 40px;
 }
 
-.help_center {
-  position: absolute;
-  bottom: 0px;
+.help_center a {
+  list-style: none;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #979aa5;
 }
 
 /* Card Container Styling */
@@ -389,4 +399,23 @@ div.activity_image#nike1 {
 
 div.activity_image#apple1 {
   background-color: #2a69af;
+}
+
+div.text {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #9da8b6;
+}
+
+span.text-bold {
+  font-size: 14px;
+  line-height: 24px;
+  color: #575a65;
+}
+
+span.text-light {
+  font-size: 12px;
+  line-height: 20px;
+  color: #9da8b6;
 }
