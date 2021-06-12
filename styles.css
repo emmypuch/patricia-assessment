@@ -21,7 +21,7 @@
   font-family: "gilroylight";
 }
 
-div#wrapper {
+body {
   display: flex;
   flex-wrap: nowrap;
 }
@@ -37,7 +37,7 @@ div.card-container {
   overflow-x: hidden;
 }
 
-div.card-sidebar_link {
+div.card_sidebar_link {
   border-right: 1px solid #eff2f7;
   position: fixed;
   max-width: 220px;
@@ -103,6 +103,23 @@ div.links ul li:nth-child(3) a {
   font-size: 13px;
   line-height: 24px;
   color: #979aa5;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.card-container {
+    display: none;
+    height: 100vh;
+  }
+
+  div.card_sidebar_link {
+    background: #fff;
+    max-width: 0px !important;
+  }
 }
 
 /* Card Container Styling */
@@ -305,6 +322,34 @@ div.flex3 a {
   color: #006156;
   font-size: 14px;
   padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  div.main-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.card_subheading {
+    padding: 2rem;
+  }
+
+  div.heading div.image-content h4 {
+    font-size: 14px;
+  }
+
+  div.heading div.image-content p {
+    font-size: 10px;
+  }
+
+  div.heading_btn a {
+    font-size: 13px;
+  }
+
+  div.virtual_cards_grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Card Brand Styling */
