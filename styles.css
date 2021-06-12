@@ -21,28 +21,23 @@
   font-family: "gilroylight";
 }
 
-div.wrapper {
-  padding: 10px 30px;
-}
-
 div.card-container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 div.card-sidebar_link {
-  padding: 5px 15px;
-  height: 100vh;
+  padding-top: 30px;
   border-right: 1px solid #eff2f7;
 }
 
 div.card-logo {
-  padding: 1rem;
+  padding: 10px 40px;
 }
 
 div.links {
   padding-top: 3rem;
+  padding-right: 20px;
 }
 
 div.links ul {
@@ -65,6 +60,7 @@ div.links ul li a {
   font-size: 14px;
   line-height: 24px;
   color: #979aa5;
+  padding: 10px 40px;
 }
 
 div.links ul li:nth-child(3) a {
@@ -82,11 +78,12 @@ div.links ul li:nth-child(3) a {
 /* Card Container Styling */
 div.virtual_card_container {
   flex: 1;
-  min-width: 60px;
+  min-width: 55%;
+  padding-top: 30px;
 }
 
 div.card_heading {
-  padding: 1rem;
+  padding-bottom: 5px;
   border-bottom: 1px solid #eff2f7;
 }
 
@@ -123,6 +120,9 @@ div.heading div.image-content h4 {
   font-size: 18px;
   font-weight: 600;
   line-height: 28px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 div.heading div.image-content p {
@@ -147,7 +147,7 @@ div.virtual_cards_grid {
 }
 
 div.image1 img {
-  width: 300px;
+  width: 420px;
 }
 
 div.image2 {
@@ -155,13 +155,11 @@ div.image2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  /* box-shadow: 10px 10px 41px rgba(0, 0, 0, 0.03);
-  box-shadow: 0px 20px 36px rgba(0, 0, 0, 0.06); */
 }
 
 div.position_img {
   position: absolute;
-  left: 30px;
+  left: 40px;
 }
 
 div.position_img1 {
@@ -171,7 +169,7 @@ div.position_img1 {
 
 div.position_img2 {
   position: relative;
-  left: -40px;
+  left: -30px;
 }
 
 div.position_img2 img {
@@ -182,11 +180,11 @@ div.position_img2 img {
 div.position_img2 img,
 div.position_img img,
 div.position_img1 img {
-  width: 300px;
+  width: 370px;
 }
 
 div.buttons {
-  padding-left: 2rem;
+  padding-left: 2.5rem;
 }
 
 div.buttons a:nth-child(1) {
@@ -195,11 +193,11 @@ div.buttons a:nth-child(1) {
   box-sizing: border-box;
   border-radius: 8px;
   color: #006156;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
   text-decoration: none;
-  padding: 10px 20px;
-  margin-right: 5px;
+  padding: 10px 30px;
+  margin-right: 10px;
 }
 
 div.buttons a:nth-child(2) {
@@ -208,10 +206,10 @@ div.buttons a:nth-child(2) {
   box-sizing: border-box;
   border-radius: 8px;
   color: #cc4945;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 28px;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 div.virtual_card_account {
@@ -249,6 +247,11 @@ div.flex2 li:nth-child(1) {
   color: #006156;
 }
 
+div.flex2 li:nth-child(4) {
+  display: flex;
+  align-items: center;
+}
+
 div.flex2 li {
   font-size: 13px;
   line-height: 28px;
@@ -273,6 +276,117 @@ div.flex3 a {
 /* Card Brand Styling */
 div.card_brand_container {
   flex: 1;
-  min-width: 20px;
   background: #f9fafc;
+}
+
+div.notification {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem;
+}
+
+div.notification ul {
+  display: flex;
+}
+
+div.notification ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+div.activity_card_container {
+  background: #fff;
+  border-radius: 24px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  height: 87%;
+}
+
+div.activity_flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+div.activity-heading,
+div.activity_date {
+  padding: 10px;
+}
+
+div.activity-heading h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #9da8b6;
+}
+
+div.activity_date div.activity-img {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9da8b6;
+}
+
+div.brand1 {
+  padding: 1rem;
+}
+
+div.brand1 ul {
+  list-style: none;
+}
+
+div.brand1 ul li {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.activity_containter {
+  display: flex;
+  align-items: center;
+}
+
+div.activity_image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+div.activity_image#amazon {
+  background-color: #fea202;
+}
+
+div.activity_image#nike {
+  background-color: #1d1e2c;
+}
+
+div.activity_image#starbuck {
+  background-color: #006156;
+}
+
+div.activity_image#netflix {
+  background-color: #cc4945;
+}
+
+div.activity_image#apple {
+  background-color: #eff2f7;
+}
+
+div.activity_image#starbuck1 {
+  background-color: #006156;
+}
+
+div.activity_image#nike1 {
+  background-color: #1d1e2c;
+}
+
+div.activity_image#apple1 {
+  background-color: #2a69af;
 }
