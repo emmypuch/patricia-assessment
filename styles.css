@@ -28,17 +28,13 @@ div.wrapper {
 div.card-container {
   display: flex;
   flex-wrap: wrap;
-}
-
-div.line {
-  position: relative;
-  left: 250px;
-  height: 100vh;
-  border-right: 1px solid #eff2f7;
+  /* justify-content: space-between; */
 }
 
 div.card-sidebar_link {
   padding: 5px 15px;
+  height: 100vh;
+  border-right: 1px solid #eff2f7;
 }
 
 div.card-logo {
@@ -57,7 +53,8 @@ div.links ul li {
   margin-top: 25px;
 }
 
-div.links img {
+div.links img,
+div.card_heading img {
   margin-right: 20px;
 }
 
@@ -80,4 +77,73 @@ div.links ul li:nth-child(3) a {
 .help_center {
   position: absolute;
   bottom: 0px;
+}
+
+/* Card Container Styling */
+div.virtual_card_container {
+  flex: 1;
+  min-width: 60px;
+}
+
+div.card_heading {
+  padding: 1rem;
+  border-bottom: 1px solid #eff2f7;
+}
+
+div.card_heading a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 42px;
+  color: #9da8b6;
+}
+
+div.card_subheading {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+div.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.heading div.image img {
+  margin-right: 10px;
+  padding: 8px;
+  background: #def5f2;
+  border-radius: 8px;
+}
+
+div.heading div.image-content h4 {
+  color: #444854;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+div.heading div.image-content p {
+  color: #9da8b6;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+div.heading_btn a {
+  background: #ffce00;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #1d1e2c;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius: 8px;
+}
+
+/* Card Brand Styling */
+div.card_brand_container {
+  flex: 1;
+  min-width: 40px;
+  background: #f9fafc;
 }
