@@ -106,11 +106,6 @@ div.links ul li:nth-child(3) a {
 }
 
 @media screen and (max-width: 768px) {
-  /* body {
-    display: flex;
-    flex-wrap: wrap;
-  } */
-
   div.card-container {
     display: none;
     height: 100vh;
@@ -130,6 +125,9 @@ div.links ul li:nth-child(3) a {
     background: red;
     width: 40px;
     height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
