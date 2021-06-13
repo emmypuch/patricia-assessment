@@ -120,6 +120,11 @@ div.links ul li:nth-child(3) a {
     display: flex;
     justify-content: space-between;
   }
+
+  div.links img,
+  div.card_heading img {
+    padding-left: 10px;
+  }
 }
 
 /* Card Container Styling */
@@ -551,8 +556,8 @@ span.text-light {
     display: flex;
     padding: 2rem;
     position: absolute;
-    top: 0;
-    left: 160px;
+    top: 5px;
+    left: 155px;
   }
 
   div.activity_flex {
@@ -573,7 +578,7 @@ span.text-light {
 /* Toggle Styling */
 @media screen and (max-width: 768px) {
   div.toggle {
-    background: red;
+    background: #eff2f7;
     width: 40px;
     height: 40px;
     margin-right: 10px;
@@ -583,24 +588,14 @@ span.text-light {
     justify-content: center;
     position: absolute;
     left: 80%;
-    top: 20px;
-    /* box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
-    transform: translate3d(-325px, 0, 0);
-    transition: all 0.3s ease-in-out; */
+    top: 25px;
+    border-radius: 5px;
   }
 
   .menu-icon {
     width: 25px;
     height: 3px;
-    background-color: #444;
+    background-color: #575a65;
     margin: 3px 0;
   }
-
-  /* .links:focus {
-    transform: translate3d(0, 0, 0);
-    box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.6);
-  }
-  .links:focus .toggle {
-    pointer-events: none;
-  } */
 }
