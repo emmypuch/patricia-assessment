@@ -125,6 +125,28 @@ div.links ul li:nth-child(3) a {
   div.card_heading img {
     padding-left: 10px;
   }
+
+  div.toggle {
+    background: #eff2f7;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 80%;
+    top: 25px;
+    border-radius: 5px;
+  }
+
+  .menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #575a65;
+    margin: 3px 0;
+  }
 }
 
 /* Card Container Styling */
@@ -572,30 +594,5 @@ span.text-light {
 
   div.activity_card_container {
     height: 100%;
-  }
-}
-
-/* Toggle Styling */
-@media screen and (max-width: 768px) {
-  div.toggle {
-    background: #eff2f7;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    left: 80%;
-    top: 25px;
-    border-radius: 5px;
-  }
-
-  .menu-icon {
-    width: 25px;
-    height: 3px;
-    background-color: #575a65;
-    margin: 3px 0;
   }
 }
