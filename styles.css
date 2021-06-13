@@ -106,9 +106,21 @@ div.links ul li:nth-child(3) a {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   div.card-container {
-    display: none;
-    height: 100vh;
+    display: block;
+    height: 100%;
+    background: white;
+    position: fixed;
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: 500ms;
+    transform: translateX(-100%);
   }
 
   div.card_sidebar_link {
@@ -136,9 +148,10 @@ div.links ul li:nth-child(3) a {
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    left: 80%;
+    left: 0;
     top: 25px;
     border-radius: 5px;
+    margin-left: 15px;
   }
 
   .menu-icon {
@@ -161,6 +174,7 @@ div.virtual_card_container {
 
 div.card_heading {
   padding-bottom: 5px;
+  padding-left: 20px;
   border-bottom: 1px solid #eff2f7;
 }
 
@@ -219,8 +233,8 @@ div.heading_btn a {
 }
 
 div.virtual_cards_grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
 }
 
 div.image1 img {
@@ -232,21 +246,6 @@ div.image2 {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-div.position_img {
-  position: absolute;
-  left: 40px;
-}
-
-div.position_img1 {
-  position: absolute;
-  right: 10px;
-}
-
-div.position_img2 {
-  position: relative;
-  left: -30px;
 }
 
 div.position_img2 img {
@@ -354,6 +353,7 @@ div.flex3 a {
   div.main-bar {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   div.card_heading a {
@@ -376,9 +376,14 @@ div.flex3 a {
     font-size: 13px;
   }
 
-  div.virtual_cards_grid {
+  div.card_heading {
+    padding-left: 60px;
+  }
+
+  div.image1 {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   div.virtual_card_account {
@@ -576,23 +581,95 @@ span.text-light {
 @media screen and (max-width: 768px) {
   div.notification {
     display: flex;
-    padding: 2rem;
     position: absolute;
     top: 5px;
-    left: 155px;
+    right: 0;
   }
 
   div.activity_flex {
     padding-top: 2rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  div.brand1 {
-    padding: 1.5rem;
   }
 
   div.activity_card_container {
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  div.virtual_cards_grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .large_image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .small_image {
+    display: none;
+  }
+}
+
+.small_image {
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  div.card_subheading {
+    padding: 1rem;
+  }
+
+  div.heading_btn a {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+
+  div.buttons {
+    padding-left: 2rem;
+  }
+
+  div.buttons a:nth-child(1) {
+    font-size: 13px;
+  }
+
+  div.buttons a:nth-child(2) {
+    font-size: 13px;
+  }
+
+  div.activity_flex {
+    padding: 0rem;
+  }
+
+  div.flex1 li {
+    font-size: 10px;
+  }
+
+  div.flex2 li {
+    font-size: 10px;
+  }
+
+  div.flex3 a {
+    font-size: 5px;
+    padding: 7px 12px;
+  }
+
+  div.activity-heading h5 {
+    font-size: 10px;
+  }
+
+  div.activity_img {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  span.text-bold {
+    font-size: 13px;
+  }
+
+  div.text {
+    font-size: 12px;
   }
 }
