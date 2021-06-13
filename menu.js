@@ -1,12 +1,14 @@
-const toggleButton = document.getElementById('navLinks')
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.getElementById("navLinks");
+  const cardContainer = document.querySelector(".card-container");
 
-toggleButton.addEventListener('click', function () {
-    let navLinksWrapper = document.getElementsByClassName('sidebar_links')[0]
-    console.log(navLinksWrapper);
-    
-    // if (navLinksWrapper.style.visibility == 'hidden') {
-    //     navLinksWrapper.style.visibility = 'visible'
-    // } else {
-    //     navLinksWrapper.style.visibility = 'hidden'
-    // }
-})
+  toggleButton.addEventListener("click", () => {
+    cardContainer.style.transform = "translateX(0%)";
+  });
+
+  document.querySelector(".main-bar").addEventListener("click", () => {
+    if (cardContainer.style.transform === "translateX(0%)") {
+      cardContainer.style.transform = "translateX(-100%)";
+    }
+  });
+});
