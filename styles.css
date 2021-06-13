@@ -106,10 +106,10 @@ div.links ul li:nth-child(3) a {
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  /* body {
     display: flex;
     flex-wrap: wrap;
-  }
+  } */
 
   div.card-container {
     display: none;
@@ -120,10 +120,20 @@ div.links ul li:nth-child(3) a {
     background: #fff;
     max-width: 0px !important;
   }
+
+  div.card-logo {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  div.toggle {
+    background: red;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* Card Container Styling */
-
 div.main-bar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -328,6 +338,10 @@ div.flex3 a {
   div.main-bar {
     display: flex;
     flex-direction: column;
+  }
+
+  div.card_heading a {
+    font-size: 25px;
   }
 
   div.card_subheading {
@@ -554,10 +568,16 @@ span.text-light {
   }
 
   div.activity_flex {
-    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   div.brand1 {
     padding: 1.5rem;
+  }
+
+  div.activity_card_container {
+    height: 100%;
   }
 }
