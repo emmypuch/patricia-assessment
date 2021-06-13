@@ -607,7 +607,7 @@ span.text-light {
   width: 100%;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 417px) {
   div.card_subheading {
     padding: 1rem;
   }
