@@ -150,6 +150,10 @@ div.links ul li:nth-child(3) a {
     margin: 3px 0;
   }
 
+  div.links {
+    height: calc(100vh - 20%);
+  }
+
   .help_center a {
     font-size: 11.5px;
   }
