@@ -120,15 +120,6 @@ div.links ul li:nth-child(3) a {
     display: flex;
     justify-content: space-between;
   }
-
-  div.toggle {
-    background: red;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 }
 
 /* Card Container Styling */
@@ -558,11 +549,10 @@ span.text-light {
 @media screen and (max-width: 768px) {
   div.notification {
     display: flex;
-    justify-content: flex-end;
     padding: 2rem;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 160px;
   }
 
   div.activity_flex {
@@ -577,5 +567,18 @@ span.text-light {
 
   div.activity_card_container {
     height: 100%;
+  }
+}
+
+/* Toggle Styling */
+@media screen and (max-width: 768px) {
+  div.toggle {
+    background: red;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: 10px;
   }
 }
